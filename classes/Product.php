@@ -1,1 +1,18 @@
-<?php ?>
+<?php
+class Product {
+    public $name;
+    public $price;
+    public $availability;
+    function __construct($_name, $_price = 5, $_availability) {
+        $this->name = $_name;
+        $this->price = $_price;
+        $this->availability = $_availability;
+    }
+    public function isAvailable() {
+        return $this->availability > 0;
+    }
+    public function buyProduct($number = 1) {
+        $this->availability -= $number;
+    }
+}
+?>
