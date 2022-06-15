@@ -1,3 +1,10 @@
+<?php 
+require_once "./classes/Product.php";
+require_once "./classes/Card.php";
+
+$card = new Card(rand(1000000000000000, 9999999999999999), 500);
+
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -9,7 +16,6 @@
 </head>
 <body>
     <?php
-    require_once "./classes/Product.php";
     ?>
 </body>
 </html>
