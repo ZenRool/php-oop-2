@@ -3,7 +3,7 @@ class Product {
     public $name;
     public $price;
     public $availability;
-    function __construct($_name, $_price = 5, $_availability) {
+    function __construct($_name, $_availability, $_price) {
         $this->name = $_name;
         $this->price = $_price;
         $this->availability = $_availability;
